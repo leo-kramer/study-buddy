@@ -1,0 +1,130 @@
+@use "./variables";
+
+h1, h2, h3, h4, h5, h6, p, a, button, li, input {
+  font-family: var(--font-family);
+  color: var(--text);
+}
+
+body {
+  background-color: var(--bg-dark);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+header {
+  --header-height: 4em;
+  position: fixed;
+  top: calc(100vh - var(--header-height));
+  width: 100%;
+  height: var(--header-height);
+  
+  nav {
+    background-color: var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 0 4em;
+    height: 100%;
+
+    ul {
+      list-style-type: none;
+
+      a {
+        text-decoration: none;
+        transition: 200ms ease-in-out;
+
+        &:hover {
+          cursor: pointer;
+          color: var(--primary);
+        }
+      }
+    }
+  }
+}
+
+.pomodoro {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.timer {
+  display: flex;
+  align-items: center;
+
+  p {
+    font-size: 4em;
+    margin:0;
+  }
+
+  input {
+    display: inline;
+    background: transparent;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    width: 3ch;
+    height: 2ch;
+    text-align: center;
+    font-size: 4em;
+
+    &:focus {
+      border: 1px solid var(--border);
+      background-color: var(--bg);
+      outline: none;
+    }
+  }
+}
+
+.material-symbols-outlined {
+  color: var(--text);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+
+  div {
+    background-color: var(--bg-light);
+    width: 3em;
+    height: 3em;
+    transition: 200ms ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+
+    span {
+      font-size: 2em;
+    }
+    
+    &:hover {
+      cursor: pointer;
+      background-color: var(--bg-lighter);
+      transform: scale(1.1);
+    }
+  }
+}
+
+// .time-options {
+//   display: flex;
+//   flex-direction: column;
+//   gap: 1em;
+
+//   .time-option {
+//     background-color: var(--bg-light);
+//     border: none;
+//     padding: 0.25em 1em;
+//     font-size: 1em;
+//     border-radius: 10px;
+//     transition: 200ms ease-in-out;
+
+//     &:hover {
+//       cursor: pointer;
+//       background-color: var(--bg-lighter);
+//       transform: scale(1.1);
+//     }
+//   }
+// }

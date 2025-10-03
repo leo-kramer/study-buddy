@@ -1,0 +1,1 @@
+:root{--primary: #1a73e8;--secondary: #fbbc04;--background: #ffffff;--text: #202124}@media (prefers-color-scheme: dark){:root{--primary: #8ab4f8;--secondary: #fdd663;--background: #202124;--text: #e8eaed}}body{background:var(--background)}body p{color:var(--primary)}body{background:red}body p{color:green}

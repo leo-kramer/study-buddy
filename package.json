@@ -1,0 +1,32 @@
+{
+  "name": "study-buddy",
+  "version": "1.0.0",
+  "description": "A focus app with your buddy following the pomodoro method. ",
+  "main": "index.js",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leo-kramer/study-buddy.git"
+  },
+  "author": "Leo Kramer",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/leo-kramer/study-buddy/issues"
+  },
+  "homepage": "https://github.com/leo-kramer/study-buddy#readme",
+  "dependencies": {
+    "jiti": "^2.6.1",
+    "vite": "^7.1.9"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.36.0",
+    "eslint": "^9.36.0",
+    "globals": "^16.4.0",
+    "sass-embedded": "^1.93.2",
+    "typescript-eslint": "^8.45.0"
+  }
+}
